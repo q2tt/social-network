@@ -1,0 +1,14 @@
+.selectedPage{
+    font-weight: bold;
+}
+
+.btnPaginator{
+    background-color: white;
+    padding: 4px;
+    border-radius: 7px;
+    color:var(--violet);
+    border: 1px solid var(--dark-violet);
+    box-shadow: 0 5px 8px -6px  rgb(133 142 255);
+    cursor: pointer;
+}
+

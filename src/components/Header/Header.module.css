@@ -1,0 +1,46 @@
+.header {
+  grid-area: h;
+  background-color: var(--mine-background-color);
+  box-shadow: 0 5px 8px -6px  rgb(133 142 255);
+}
+.header img {
+  padding: 15px;
+  width: 40px;
+  height: 40px;
+}
+.login{
+  float: right;
+  padding: 20px;
+  color: white;
+}
+.btn{
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
+  color:var(--violet);
+  border: 1px solid var(--dark-violet);
+  box-shadow: 0 5px 8px -6px  rgb(133 142 255);
+ cursor: pointer;
+}
+.loginBlock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24px;
+}
+.email{
+  margin-right: 15px;
+  color:var(--violet);
+  font-size: 18px;
+}
+.linkLogin{
+  display: block;
+  margin-top: -15px;
+  font-size: 24px;
+ }
+
+@media (max-width: 481px) {
+  .email{
+    display: none;
+  }
+}

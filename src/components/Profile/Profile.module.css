@@ -1,0 +1,39 @@
+
+/*.posts_block{*/
+/*  width: 100%;*/
+/*  margin: 0 0 0 20px ;*/
+/*}*/
+/*.new_post textarea{*/
+/*  display: block;*/
+/*  width: 80%;*/
+/*}*/
+/*.new_post button{*/
+/*  width: 200px;*/
+/*  height: 40px;*/
+/*  background-color: #0400f7;*/
+/*  color: #ffffff;*/
+/*  border: none;*/
+/*  border-radius: 4px;*/
+/*  font-size: 15px;*/
+/*  font-weight: bold;*/
+/*  background-color: white;*/
+/*  padding: 10px;*/
+/*  border-radius: 7px;*/
+/*  color:var(--violet);*/
+/*  border: 1px solid var(--dark-violet);*/
+/*  box-shadow: 0 5px 8px -6px  rgb(133 142 255);*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.item{*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  margin-bottom: 20px;*/
+/*}*/
+/*.posts_img{*/
+/*  margin-right: 30px;*/
+/*}*/
+/*.posts_img img{*/
+/*width: 300px;*/
+/*height: 300px;*/
+/*}*/

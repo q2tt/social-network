@@ -1,0 +1,35 @@
+
+.app-wrapper{
+  width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 
+  "h h"
+  "n c ";
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+}
+
+.app-wrapper-content{
+  grid-area: c;
+}
+
+@media (max-width: 1201px) {
+  .app-wrapper{
+    width: 100%;
+  }
+}
+@media (max-width: 769px) {
+
+  .app-wrapper{
+    grid-template-areas:
+  "h h"
+  "n n "
+  "c c ";
+    grid-template-rows: 70px auto 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+

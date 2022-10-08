@@ -1,0 +1,86 @@
+.img_back {
+    margin-bottom: 20px;
+}
+.img_back img {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+}
+.information {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+}
+.photo img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.btnChangePhoto{
+    color:var(--violet);
+    cursor: pointer;
+}
+
+.info{
+    margin: 0 0 0 30px;
+}
+.info h1{
+    margin: 0 0 12px 0;
+}
+
+.datas_title{
+    margin: 10px;
+    font-size: 18px;
+    line-height: 28px;;
+    color: var(--violet);
+}
+.users_data{
+    margin: 0;
+    color: black;
+    font-size: 20px;
+    line-height: 22px;
+}
+.status{
+    background-color: #b3b3dd;
+    border-radius: 3px;
+    padding: 8px 14px;
+}
+
+@media (max-width: 1201px) {
+}
+@media (max-width: 1025px) {
+    .img_back img {
+        height: 280px;
+    }
+}
+@media (max-width: 769px) {
+    .img_back img {
+        height: 210px;
+    }
+    .information {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .info{
+        margin: 0 0 0 0;
+    }
+}
+@media (max-width: 481px) {
+    .img_back img {
+        height: 200px;
+    }
+
+
+    .photo img {
+        width: 220px;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 320px) {
+    .img_back img {
+        height: 130px;
+    }
+}
