@@ -6,6 +6,7 @@ import usersReducer from "./users-reducer";
 import authReducer from "./auth-reducer";
 import newsReducer from "./news-reduser";
 import thunkMiddleware from 'redux-thunk';
+// import appReducer from "./app-reducer";
 import appReducer from "./app-reducer";
 import settingsReducer from "./settings-reducer";
 
