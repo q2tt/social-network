@@ -1,5 +1,6 @@
-import { NavigationTimingPolyfillEntry } from "web-vitals";
+
 import {profileAPI, usersAPI} from "../api/api";
+import { PostType, ProfileType, PhotosType } from "../types/types";
 
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
@@ -8,37 +9,8 @@ const SET_STATUS = 'SET_STATUS ';
 const DELETE_POST ='DELETE_POST';
 const SAVE_PHOTO_SUCCESS = 'SAVE_PHOTO_SUCCESS';
 
-type PostType = {
-    id: number
-    message: string
-    like: number
-}
 
-type PhotosType = {
-    small: string | null
-    large: string | null
-}
 
-type ProfileType = {
-    userId: number
-    lookingForAJob: boolean
-    lookingForAJobDescription: string
-    fullName: string
-    contacts:ProfileContactType
-    photos: PhotosType
-
-}
-
-type ProfileContactType = {
-    github: string
-    vk: string
-    facebook: string
-    instagram: string
-    twitter: string
-    website: string
-    youtube: string
-    mainLink: string
-}
 
 let initialState = {
     posts : [
