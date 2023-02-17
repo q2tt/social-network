@@ -1,5 +1,3 @@
-
-
 export type PostType = {
     id: number
     message: string
@@ -30,4 +28,12 @@ export type ProfileContactType = {
     website: string
     youtube: string
     mainLink: string
+}
+
+export type UserType = {
+    name: string,
+    id: number
+    photos: PhotosType
+    status: string,
+    followed: boolean
 }
