@@ -1,13 +1,27 @@
-import React from "react";
+import React, {FC} from "react";
 import s from "./Users.module.css";
-import userPhoto from "../../assets/images/user.jpeg";
+import userPhoto from '../../assets/images/user.jpeg'
 import {NavLink} from "react-router-dom";
 
 import Paginator from "../common/Paginator/Paginator";
+import { UserType } from "../../types/types";
 
-let Users = ({currentPage, onPageChanged, pageSize , totalUsersCount,    ...props}) => {
+type PropsType = {
+    currentPage: number
+    onPageChanged: (pageNumber: number) => void
+    users: Array<UserType>
+    pageSize: number 
+    totalUsersCount: number
+    followingInProgress: Array<number>
+    unfollow: (userId: number) => void
+    follow: (userId: number) => void
+   
+}
 
-    let pageCount = Math.ceil(props.totalUsersCount / props.pageSize) ;
+
+let Users: FC<PropsType> = ({currentPage, onPageChanged, pageSize , totalUsersCount,    ...props}) => {
+
+    let pageCount = Math.ceil(totalUsersCount / pageSize) ;
     let pages = [];
     for(let i =1; i <= pageCount; i++){
         pages.push(i)

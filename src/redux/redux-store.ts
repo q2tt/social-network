@@ -6,7 +6,6 @@ import usersReducer from "./users-reducer";
 import authReducer from "./auth-reducer";
 import newsReducer from "./news-reduser";
 import thunkMiddleware from 'redux-thunk';
-// import appReducer from "./app-reducer";
 import appReducer from "./app-reducer";
 import settingsReducer from "./settings-reducer";
 
@@ -20,6 +19,10 @@ let reducers = combineReducers({
     news: newsReducer,
     settings: settingsReducer
 });
+
+type RootRedusetType = typeof reducers;
+ export type AppStateType = ReturnType<RootRedusetType>
+
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));
 
 export  default store;
